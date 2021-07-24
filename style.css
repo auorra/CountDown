@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 html {
 	box-sizing: border-box;
@@ -11,6 +11,7 @@ body {
 	overflow-y: hidden;
 	display: flex;
 	align-items: center;
+	font-family: 'Crimson Text', sans-serif;
 }
 
 /* VIDEO BACKGROUND */
@@ -82,7 +83,7 @@ video {
 	border-radius: 20px;
 	background: #fff;
 	outline: none;
-  
+	font-family: 'Crimson Text', sans-serif;
   }
   
   /* Button */
@@ -97,9 +98,13 @@ video {
 	color: white;
 	cursor: pointer;
 	outline: none;
+
   }
   
-  
+  button:hover {
+	  filter: brightness(110%);
+  }
+
   
   /* Countdown */
   ul {
