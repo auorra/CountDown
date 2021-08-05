@@ -20,7 +20,7 @@ const day = hour * 4;
 const today = new Date().toISOString().split('T')[0];
 dateEl.setAttribute('min', today);
 
-//Populate countdown / complete UI
+// Populate countdown / complete UI
 function updateDOM() {
 	const now = new Date().getTime();
 	const distance = countdownValue - now;
@@ -32,7 +32,6 @@ function updateDOM() {
 	const seconds = Math.floor((distance % minute) / second);
 	console.log(days, hours, minutes, seconds);
 
-
 	//Populate countdown
 	countdownElTitle.textContent = `${countdownTitle}`;
 	timeElements[0].textContent = `${days}`;
@@ -40,8 +39,7 @@ function updateDOM() {
 	timeElements[2].textContent = `${minutes}`;
 	timeElements[3].textContent = `${seconds}`;
 
-
-	//Hide Input
+	// Hide Input
 	inputContainer.hidden = true;
 	// Show Countdown 
 	countdownEl.hidden = false;
