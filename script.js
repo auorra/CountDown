@@ -54,10 +54,18 @@ function updateCountDown(e) {
 	countdownTitle = e.srcElement[0].value;
 	countdownDate = e.srcElement[1].value;
 	console.log(countdownTitle, countdownDate)
-	//Get number version of current Date, updateDOM
-	countdownValue = new Date(countdownDate).getTime();
-	console.log('countdown value: ', countdownValue);
-	updateDOM();
+
+	//check for valid date
+	if (countdownDate === '') {
+		alert('Please select a date for the countdown.');
+	} else {
+		//Get number version of current Date, updateDOM
+		countdownValue = new Date(countdownDate).getTime();
+		console.log('countdown value: ', countdownValue);
+		updateDOM();
+	}
+
+
 }
 
 // Reset All values
