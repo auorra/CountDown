@@ -1,3 +1,4 @@
+// VARIABLES //
 const inputContainer = document.getElementById('input-container');
 const countdownForm = document.getElementById('countdownForm');
 const dateEl = document.getElementById('date-picker');
@@ -22,9 +23,12 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 4;
 
+
 //Set Date Input Min with Today's Date
 const today = new Date().toISOString().split('T')[0];
 dateEl.setAttribute('min', today);
+
+// FUNCTIONS //
 
 // Populate Countdown / Complete UI
 function updateDOM() {
@@ -105,7 +109,7 @@ function restorePrevCountdown() {
 	}
 }
 
-// Event Listeners
+// EVENT LISTENERS //
 countdownForm.addEventListener('submit', updateCountDown);
 coutndownBtn.addEventListener('click', reset);
 completeBtn.addEventListener('click', reset);
