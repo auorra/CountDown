@@ -1,4 +1,4 @@
-// VARIABLES //
+// VARIABLES 
 const inputContainer = document.getElementById('input-container');
 const countdownForm = document.getElementById('countdownForm');
 const dateEl = document.getElementById('date-picker');
@@ -18,6 +18,7 @@ let countdownValue = Date;
 let countdownActive;
 let savedCountdown;
 
+//Variables
 const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
